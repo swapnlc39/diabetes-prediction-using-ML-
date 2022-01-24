@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+<div style="color:red"> <h1>Diabetes Predictor New</h1> </div>
+
+<form action="{{ url_for('predict') }}" method="POST">
+  <h3>Number of Pregnancies eg. 0:</h3> <input class="form-input" id="first"  type="text" name="pregnancies"><br><br>
+  <h3>Glucose (mg/dL) eg. 90:</h3>    <input class="form-input" id="second" type="text" name="glucose"><br><br>
+  
+  <h3>Blood Pressure (mmHg) eg. 90:</h3>    <input class="form-input"  id="third" type="text" name="bloodpressure"><br><br>
+  <h3>Skin Thickness (mm) eg. 25:</h3>    <input class="form-input" id="fourth" type="text" name="skinthickness"><br><br>
+  <h3>Insulin Level (IU/mL) eg. 75:</h3>    <input class="form-input" id="fifth" type="text" name="insulin"><br><br>
+  <h3>Body Mass Index (kg/m²) eg. 22.1:</h3>    <input class="form-input" id="sixth" type="text" name="bmi"><br><br>
+  <h3>Diabetes Pedigree Function eg. 0.50:</h3>    <input class="form-input" id="seventh" ype="text" name="dpf"><br><br>
+  <h3>Age (years) eg. 30:</h3>    <input class="form-input" type="text" id="eighth" name="age"><br><br>
+  
+ 
+ <input id="sub" type="submit" class="my-cta-button" value="Predict">
+  
+</form>
+
+<p>Click the "Predict" button and the form-data will be sent to a page on the 
+server .</p>
+</div>
+<style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            padding: 1px;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+       
+       #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            }
+            
+       #fifth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;}
+            
+       #sixth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;}
+            
+       #seventh {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;}
+            
+       #eighth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;}
+                    
+       #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: yellow;
+        }
+   </style>
+</body>
+</html>
